@@ -1,0 +1,44 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent scrolling */
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+
+.text-column,
+.image-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh; /* Full viewport height */
+}
+
+.text,
+.image {
+  position: absolute;
+  opacity: 0;
+}
+
+.text.active,
+.image.active {
+  opacity: 1;
+}
+
+.text {
+  bottom: 25px;
+  left: 10%;
+}
+
+#image2 > img:first-child {
+  bottom: -135px;
+  left: 55px;
+}
+
+#image2 > img:last-child {
+  top: -135px;
+  right: -10px;
+}
